@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import * as s from "./styles";
 
 const Nav: React.FC<{ page: string }> = ({ page }) => {
-    const [buttonSelected, setButtonSelected] = useState<number>(1);
+    const [buttonSelected, setButtonSelected] = useState<number>(4);
 
     const changeButton = useCallback((number: number) => {
         setButtonSelected(number);

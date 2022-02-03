@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav<{ page: string }>`
-  width: ${({ page }) => page === "Footer" ? "50%" : "100%"};
+  width: ${({ page }) => page === "Footer" ? "30%" : "100%"};
   display: flex;
   align-items: center;
   justify-content: space-evenly;
