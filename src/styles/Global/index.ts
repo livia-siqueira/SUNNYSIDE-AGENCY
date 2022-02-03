@@ -14,4 +14,9 @@ body {
     height: 100vh;
 }
 
+button {
+    cursor: pointer;
+    outline: unset;
+}
+
 `

@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-interface propsButton {
-  isActive: boolean;
-}
-
 export const Container = styled.header`
   width: 100%;
   height: 75vh;
@@ -23,21 +19,7 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.white};
-  font-family: ${({theme}) => theme.fonts.fraunces};
-`;
-
-export const Nav = styled.nav`
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const ButtonNav = styled.button`
-  background: transparent;
-  border: unset;
-  color: ${({ theme }) => theme.colors.white};
-  font-family: ${({theme}) => theme.fonts.barlow};
+  font-family: ${({ theme }) => theme.fonts.fraunces};
 `;
 
 export const Defination = styled.div`
@@ -47,13 +29,35 @@ export const Defination = styled.div`
   justify-content: center;
   align-items: center;
   height: 50%;
+
+  @media screen and (max-width: 400px) {
+    gap: 25px;
+  }
+`;
+
+export const Menu = styled.div`
+  &:after {
+    @media screen and (max-width: 400px) {
+      content: "";
+      display: block;
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      top: 60px;
+      right: 35.5px;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid #fff;
+      transform: rotate(45deg);
+    }
+  }
 `;
 
 export const IconArrow = styled.span`
-    background-image: url("/desktop/icon-arrow-down.svg");
-    background-repeat: no-repeat;
-    width: 36px;
-    height: 100%;
+  background-image: url("/desktop/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 100%;
 `;
 
 export const TextDefine = styled.h1`
@@ -61,5 +65,29 @@ export const TextDefine = styled.h1`
   font-variant: small-caps;
   letter-spacing: 5px;
   font-size: 3rem;
-  font-family: ${({theme}) => theme.fonts.fraunces};
+  font-family: ${({ theme }) => theme.fonts.fraunces};
+  text-align: center;
+  @media screen and (max-width: 400px) {
+    line-height: 1;
+  }
+`;
+
+export const Icon = styled.button`
+  display: none;
+
+  @media screen and (max-width: 400px) {
+    display: block;
+    color: white;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border: unset;
+  }
+`;
+
+export const Nav = styled.div`
+  width: 30%;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 `;

@@ -10,7 +10,7 @@ const ItemText : React.FC<propsItem> = ({title, children}) => {
         <s.Container>
             <s.Title>{title}</s.Title>
             <s.Text>{children}</s.Text>
-            <s.LearnMore>learn more</s.LearnMore>
+            <s.LearnMore typeText={title}> learn more</s.LearnMore>
         </s.Container>
     )
 }
