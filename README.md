@@ -8,7 +8,7 @@ I'm a front-end developer student.
 
 # Screenshots
 <img src="./public/images-readme/localhost_3000_ (5).png" width="350px">
-<img src="./public/images-readme/localhost_3000_(iPhone SE) (1).png" height="500px" width="550px">
+<img src="./public/images-readme/localhost_3000_(iPhone SE) (1).png" height="500px" width="500px">
 <img src="./public/images-readme/localhost_3000_(iPhone SE) (2).png">
 
 
